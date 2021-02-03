@@ -10,7 +10,7 @@ namespace Csharp3
     class Program
     {
         [DllImport("kernel32.dll", SetLastError = true, CharSet= CharSet.Auto)]
-         static extern void VirtualAlloc(IntPtr lpAddress, UInt32 dwSize, ulong flAllocationType, ulong flProtect);
+         static extern IntPtr VirtualAlloc(IntPtr lpAddress, UInt32 dwSize, ulong flAllocationType, ulong flProtect);
 
         static void Main(string[] args)
         {
